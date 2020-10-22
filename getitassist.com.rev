@@ -1,0 +1,17 @@
+$TTL 86400
+@ IN SOA dns-server.getitassist.com. admin.getitassist.com. (
+                                            2020011800 ;Serial
+                                            3600 ;Refresh
+                                            1800 ;Retry
+                                            604800 ;Expire
+                                            86400 ;Minimum TTL
+)
+;Name Server Information
+@ IN NS dns-server.getitassist.com.
+dns-primary     IN      A       172.31.45.210
+
+;Reverse lookup for Name Server
+210.45 IN PTR dns-server.getitassist.com.
+82.35 IN PTR server1.getitassist.com.
+13.45 IN PTR server2.getitassist.com.
+202.45 IN PTR server3.getitassist.com.
